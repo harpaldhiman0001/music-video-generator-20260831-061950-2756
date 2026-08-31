@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Video Creator – Beatviz.in</title>
+  <meta name="description" content="Generate stunning music videos that sync perfectly with your audio." />
+  <meta name="keywords" content="music-video, ai video, video generation, beatviz, Audio Analysis, Visual Sync" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.beatviz.in/auth?mode=login" />
+  <meta property="og:title" content="Music Video Creator – Beatviz.in" />
+  <meta property="og:description" content="Generate stunning music videos that sync perfectly with your audio." />
+  <meta property="og:url" content="https://www.beatviz.in/auth?mode=login" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Music Video Creator – Beatviz.in" />
+  <meta name="twitter:description" content="Generate stunning music videos that sync perfectly with your audio." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Beatviz.in Music Video Creator",
+    "applicationCategory": "VideoEditingApplication",
+    "description": "Generate stunning music videos that sync perfectly with your audio.",
+    "url": "https://www.beatviz.in/auth?mode=login",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0a0a0f;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 2rem;
+      background-image: 
+        radial-gradient(ellipse at 20% 50%, rgba(99, 102, 241, 0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 50%, rgba(236, 72, 153, 0.08) 0%, transparent 60%);
+    }
+    .container { max-width: 700px; width: 100%; text-align: center; }
+    .logo {
+      font-size: 3.5rem;
+      font-weight: 900;
+      background: linear-gradient(135deg, #818cf8, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.04em;
+    }
+    .logo span { font-weight: 300; -webkit-text-fill-color: #94a3b8; background: none; }
+    .emoji-badge { font-size: 4rem; display: block; margin-bottom: 0.5rem; animation: float 3s ease-in-out infinite; }
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(236, 72, 153, 0.15));
+      border: 1px solid rgba(99, 102, 241, 0.2);
+      color: #a5b4fc;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0.3rem 1rem;
+      border-radius: 20px;
+      margin-bottom: 1.2rem;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #818cf8, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .subtitle {
+      color: #94a3b8;
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-box {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      margin-bottom: 2rem;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+    .cta-box:hover { background: rgba(255, 255, 255, 0.06); border-color: rgba(99, 102, 241, 0.2); }
+    .cta-box p { color: #94a3b8; font-size: 0.95rem; margin-bottom: 0.5rem; }
+    .cta-box .big-icon { font-size: 3rem; display: block; margin-bottom: 0.5rem; }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: linear-gradient(135deg, #818cf8, #ec4899);
+      color: white;
+      padding: 0.9rem 2.4rem;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 30px rgba(99, 102, 241, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-primary::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+      transition: left 0.5s;
+    }
+    .btn-primary:hover::before { left: 100%; }
+    .btn-primary:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 8px 40px rgba(99, 102, 241, 0.4); }
+    .btn-primary:active { transform: translateY(0) scale(0.98); }
+    .btn-primary svg { width: 22px; height: 22px; }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 0.75rem;
+      margin: 2rem 0;
+    }
+    .feature-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 0.9rem 0.5rem;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+    .feature-item:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(99, 102, 241, 0.15);
+      transform: translateY(-2px);
+    }
+    .feature-item .icon { font-size: 1.5rem; display: block; margin-bottom: 0.3rem; }
+    .feature-item strong { color: #e2e8f0; display: block; font-size: 0.85rem; margin-bottom: 0.15rem; }
+    .feature-item span { font-size: 0.75rem; color: #64748b; }
+    .footer {
+      margin-top: 2rem;
+      color: #475569;
+      font-size: 0.75rem;
+    }
+    .footer a { color: #818cf8; text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+    .click-hint {
+      display: inline-block;
+      background: rgba(99, 102, 241, 0.1);
+      color: #818cf8;
+      font-size: 0.7rem;
+      padding: 0.2rem 0.8rem;
+      border-radius: 20px;
+      margin-top: 1rem;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    @media (max-width: 600px) {
+      .logo { font-size: 2.5rem; }
+      h1 { font-size: 1.6rem; }
+      .subtitle { font-size: 0.95rem; }
+      .cta-box { padding: 1.5rem; }
+      .features { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+      .btn-primary { padding: 0.8rem 1.6rem; font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="emoji-badge">🎵</span>
+    <div class="logo">Beatviz<span>.in</span></div>
+    <div class="badge">⚡ AI Video Generation</div>
+    <h1>
+      Create <span class="gradient-text">Music Video Creator</span><br />
+      With AI
+    </h1>
+    <p class="subtitle">
+      Upload your track and let our AI create a visual experience that matches the rhythm, mood, and lyrics. Perfect for musicians, labels, and promotional content.
+    </p>
+
+    <div class="cta-box" id="ctaBox">
+      <span class="big-icon">🚀</span>
+      <p><strong style="color:#e2e8f0;">Ready to create amazing videos?</strong></p>
+      <p style="font-size:0.85rem;color:#64748b;">
+        Join Beatviz.in and start generating music video creator with AI
+      </p>
+      <span class="click-hint">👆 Click anywhere to get started</span>
+    </div>
+
+    <button onclick="redirectToBeatviz()" class="btn-primary">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+        <path d="M2 17l10 5 10-5"/>
+        <path d="M2 12l10 5 10-5"/>
+      </svg>
+      Start Creating Videos
+    </button>
+
+    <div class="features">
+      <div class="feature-item" onclick="redirectToBeatviz()">
+        <span class="icon">✨</span>
+        <strong>Audio Analysis</strong>
+        <span>Powerful AI</span>
+      </div>
+      <div class="feature-item" onclick="redirectToBeatviz()">
+        <span class="icon">🎨</span>
+        <strong>Visual Sync</strong>
+        <span>Customizable</span>
+      </div>
+      <div class="feature-item" onclick="redirectToBeatviz()">
+        <span class="icon">⚡</span>
+        <strong>Lyrics Display</strong>
+        <span>Lightning fast</span>
+      </div>
+      <div class="feature-item" onclick="redirectToBeatviz()">
+        <span class="icon">🌐</span>
+        <strong>Template Library</strong>
+        <span>Share anywhere</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>© 2025 Beatviz.in — <a href="https://www.beatviz.in/auth?mode=login">AI Video Generation Platform</a></p>
+    </div>
+  </div>
+
+  <script>
+    function redirectToBeatviz() {
+      window.location.href = "https://www.beatviz.in/auth?mode=login";
+    }
+    document.getElementById('ctaBox').addEventListener('click', redirectToBeatviz);
+    document.addEventListener('click', function(e) {
+      if (e.target.closest('.footer a')) return;
+      redirectToBeatviz();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        redirectToBeatviz();
+      }
+    });
+  </script>
+</body>
+</html>
